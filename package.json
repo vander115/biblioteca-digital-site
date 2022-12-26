@@ -4,14 +4,18 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "tsc && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/styled": "^11.10.5",
+    "framer-motion": "^8.0.2",
+    "invp-ts": "^1.0.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.7.1",
+    "react-in-viewport": "^1.0.0-alpha.28",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {

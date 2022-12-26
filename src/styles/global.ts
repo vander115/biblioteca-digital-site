@@ -5,11 +5,13 @@ export default createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
 }
 
-:root {
+#app {
   &.default {
     --corPadrao: 255, 255, 255;
+    --corPadrao2: 0, 0, 0;
 
     --corPrimaria: 46, 150, 51; //rgb
     --corPrimaria10: 240, 255, 240; //rgb
@@ -28,10 +30,33 @@ export default createGlobalStyle`
     --corTerciaria100: 192, 192, 192;
     --corTerciaria200: 128, 128, 128;
     --corTerciaria900: 20, 20, 20;
+
+    &.purple {
+    --corPadrao: 255, 255, 255;
+
+    --corPrimaria: 108, 12, 242; //rgb
+    --corPrimaria10: 252, 240, 255; //rgb
+    --corPrimaria100: 171, 112, 255; //rgb
+    --corPrimaria200: 149, 0, 190; //rgb
+    --corPrimaria900: 44, 0, 56;
+
+    --corSecundaria: 192, 2, 252; //rgb
+    --corSecundaria10: 252, 240, 255; //rgb
+    --corSecundaria100: 223, 108, 255; //rgb
+    --corSecundaria200: 149, 0, 190; //rgb
+    --corSecundaria900: 37, 1, 46;
+
+    --corTerciaria: 169, 169, 169;
+    --corTerciaria10: 211, 211, 211;
+    --corTerciaria100: 192, 192, 192;
+    --corTerciaria200: 128, 128, 128;
+    --corTerciaria900: 20, 20, 20;
+    }
   }
 
   &.dark {
     --corPadrao: 20, 20, 20;
+    --corPadrao2: 255, 255, 255;
 
     --corPrimaria100: 58, 194, 63; //rgb
     --corPrimaria10: 17, 28, 18; //rgb
@@ -39,17 +64,40 @@ export default createGlobalStyle`
     --corPrimaria200: 58, 194, 63; //rgb
     --corPrimaria900: 58, 194, 63;
 
-    --corSecundaria: 184, 75, 24; //rgb
+    --corSecundaria: 204, 83, 27; //rgb
     --corSecundaria10: 255, 245, 240; //rgb
-    --corSecundaria100: 184, 75, 24; //rgb
-    --corSecundaria200: 184, 75, 24; //rgb
-    --corSecundaria900: 184, 75, 24;
+    --corSecundaria100: 204, 83, 27; //rgb
+    --corSecundaria200: 204, 83, 27; //rgb
+    --corSecundaria900: 204, 83, 27;
 
     --corTerciaria: 169, 169, 169;
     --corTerciaria10: 211, 211, 211;
     --corTerciaria100: 192, 192, 192;
     --corTerciaria200: 128, 128, 128;
     --corTerciaria900: 20, 20, 20;
+
+    &.purple {
+      --corPadrao: 20, 20, 20;
+    --corPadrao2: 255, 255, 255;
+
+    --corPrimaria: 146, 72, 250; //rgb
+    --corPrimaria10: 26, 18, 36; //rgb
+    --corPrimaria100: 146, 72, 250; //rgb
+    --corPrimaria200: 146, 72, 250; //rgb
+    --corPrimaria900: 146, 72, 250;
+
+    --corSecundaria: 144, 2, 191; //rgb
+    --corSecundaria10: 42, 14, 51; //rgb
+    --corSecundaria100: 144, 2, 191; //rgb
+    --corSecundaria200: 144, 2, 191; //rgb
+    --corSecundaria900: 144, 2, 191;
+
+    --corTerciaria: 169, 169, 169;
+    --corTerciaria10: 211, 211, 211;
+    --corTerciaria100: 192, 192, 192;
+    --corTerciaria200: 128, 128, 128;
+    --corTerciaria900: 20, 20, 20;
+    }
   }
 
   --sombraPrimaria: rgba(var(--corPrimaria), 0.2);
@@ -83,7 +131,7 @@ export default createGlobalStyle`
   --textoPrimaria200: rgb(var(--corPrimaria200));
   --textoPrimaria900: rgb(var(--corPrimaria900));
 
-  --textoPadrao: rgb(var(--corPadrao));
+  --textoPadrao: rgb(var(--corPadrao2));
 
   --textoSecundaria: rgb(var(--corSecundaria));
   --textoSecundaria100: rgb(var(--corSecundaria100));
@@ -104,6 +152,6 @@ export default createGlobalStyle`
 }
 
 body {
-  background-color: var(--fundoPrimaria200);
+  background-color: var(--fundoClaroPrimaria);
 }
 `;
