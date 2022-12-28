@@ -9,6 +9,10 @@ export const Container = styled.section`
   padding: 2rem;
   position: relative;
 
+  @media screen and (max-width: 550px) {
+    padding: 1rem;
+  }
+
   .switch {
     position: relative;
     display: inline-block;
@@ -95,33 +99,40 @@ export const Container = styled.section`
   }
 
   h1 {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 4rem;
     margin: 0;
-    background: linear-gradient(var(--gradientPrimaria));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     justify-self: flex-start;
     align-self: flex-start;
     span {
-      background: linear-gradient(var(--gradientSecundaria));
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 4rem;
+      background: linear-gradient(var(--gradientPrimaria));
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+    mark {
+      background-color: transparent;
+      span {
+        background: linear-gradient(var(--gradientSecundaria));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
 
   h2 {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    text-transform: uppercase;
-    font-weight: 900;
-    font-size: 2rem;
+    span {
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 2rem;
+      background: linear-gradient(var(--gradientPrimaria));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
     text-align: right;
-    margin: 0;
-    background: linear-gradient(var(--gradientPrimaria));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
     justify-self: flex-end;
     align-self: flex-end;
   }
@@ -141,20 +152,20 @@ export const Container = styled.section`
     position: absolute;
     img {
       width: 100%;
-      transform: translateX(10px);
+      transform: translateX(5px);
     }
   }
 
   @media screen and (max-width: 950px) {
-    h1 {
+    h1 span {
       font-size: 3rem;
     }
   }
   @media screen and (max-width: 850px) {
-    h1 {
+    h1 span {
       font-size: 3rem;
     }
-    h2 {
+    h2 span {
       font-size: 1.5rem;
     }
   }
@@ -165,7 +176,7 @@ export const Container = styled.section`
     }
   }
   @media screen and (max-width: 500px) {
-    h1 {
+    h1 span {
       font-size: 2rem;
     }
   }

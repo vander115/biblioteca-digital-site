@@ -8,6 +8,9 @@ export const Container = styled.section`
   align-items: center;
   padding: 4rem 2rem;
   background-color: var(--fundoClaroPrimaria);
+  @media screen and (max-width: 550px) {
+    padding: 4rem 1rem;
+  }
 `;
 
 export const Card = styled.div`
@@ -18,11 +21,13 @@ export const Card = styled.div`
   padding: 2rem;
   border-radius: 1rem;
   h2 {
-    font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    background: linear-gradient(var(--gradientPrimaria));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 2rem;
+    span {
+      font-family: 'Poppins', Arial, Helvetica, sans-serif;
+      background: linear-gradient(var(--gradientPrimaria));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2rem;
+    }
     text-align: center;
     margin: 1rem 0;
   }
@@ -33,12 +38,17 @@ export const Card = styled.div`
     text-align: justify;
     color: var(--textoPadrao);
   }
-  img {
-    width: 100%;
-    border-radius: 1rem;
+  figure {
     margin: 1rem 0;
-    box-shadow: 0 0 20px var(--sombraPrimaria);
-    outline: 1px solid var(--fundoPrimaria200);
+    img {
+      width: 100%;
+      border-radius: 1rem;
+      box-shadow: 0 0 20px var(--sombraPrimaria);
+      outline: 1px solid var(--fundoPrimaria200);
+    }
+    span {
+      font: 500 0.8rem 'Poppins', sans-serif;
+    }
   }
   @media screen and (max-width: 850px) {
     width: 35rem;

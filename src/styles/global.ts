@@ -5,7 +5,7 @@ export default createGlobalStyle`
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 #app {
@@ -65,7 +65,7 @@ export default createGlobalStyle`
     --corPrimaria900: 58, 194, 63;
 
     --corSecundaria: 204, 83, 27; //rgb
-    --corSecundaria10: 255, 245, 240; //rgb
+    --corSecundaria10: 36, 16, 6; //rgb
     --corSecundaria100: 204, 83, 27; //rgb
     --corSecundaria200: 204, 83, 27; //rgb
     --corSecundaria900: 204, 83, 27;
@@ -153,5 +153,26 @@ export default createGlobalStyle`
 
 body {
   background-color: var(--fundoClaroPrimaria);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(240, 255, 240);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background-color: rgb(46, 150, 51);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(232, 114, 59);
 }
 `;
