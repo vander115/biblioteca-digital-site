@@ -1,4 +1,4 @@
-import styled from '@emotion/styled';
+import styled from 'styled-components';
 import { motion } from 'framer-motion';
 
 export const Character = styled(motion.span)`
@@ -11,6 +11,6 @@ export const Word = styled(motion.span)`
     margin-left: 0.35rem;
   }
   display: inline-block;
-  
+
   white-space: nowrap;
 `;
