@@ -51,7 +51,7 @@ export function Banner({ changeTheme, bannerRef, theme }: IBannerProps) {
       <motion.div
         initial={{ opacity: 0, borderRadius: '1rem' }}
         animate={{ opacity: 1, borderRadius: '20rem' }}
-        transition={{ duration: 0.5, delay: 1 }}
+        transition={{ duration: 1, delay: 1 }}
         className="logo"
       >
         <motion.img
