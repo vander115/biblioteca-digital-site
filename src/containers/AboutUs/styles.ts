@@ -48,6 +48,7 @@ export const Card = styled.div`
     }
     span {
       font: 500 0.8rem 'Poppins', sans-serif;
+      color: var(--textoPadrao);
     }
   }
   @media screen and (max-width: 850px) {
