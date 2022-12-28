@@ -123,7 +123,7 @@ export function Developers({ changeTheme }: IDevsProps) {
       image_url: '/devs-images/bianca.jpg',
     },
     {
-      name: 'Maria Clara Luiz Fontelene',
+      name: 'Maria Clara Luis Fontenele',
       image_url: '/devs-images/clara.jpg',
     },
     {
@@ -266,13 +266,14 @@ export function Developers({ changeTheme }: IDevsProps) {
                 initial={{ opacity: 0, scale: 0.5 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 viewport={{ once: true }}
+                transition={{ duration: 0.5 }}
                 className="dev-card"
               >
                 <motion.img
                   initial={{ opacity: 0, scale: 0.5 }}
                   whileInView={{ opacity: 1, scale: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 1 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
                   key={index}
                   src={dev.image_url}
                   alt={`Foto de ${dev.name}`}
@@ -281,7 +282,7 @@ export function Developers({ changeTheme }: IDevsProps) {
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
                   viewport={{ once: true }}
-                  transition={{ delay: 2 }}
+                  transition={{ duration: 0.5, delay: 1 }}
                 >
                   {dev.name}
                 </motion.p>

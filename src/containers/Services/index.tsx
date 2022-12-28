@@ -11,19 +11,19 @@ export function Services() {
       icon: ImBook,
       title: 'Livros',
       content:
-        'Oferece-se, da melhor maneira possível, o controle de livros da Biblioteca Neilyta, contando com a listagem completa de todos os livros e também a classificação do livro mais lido do ano ou mês.',
+        'O foco principal do sistema é a organização dos livros presentes no acervo da Biblioteca Neilyta, permitindo o cadastro, alteração, arquivamento e empréstimo das obras de maneira rápida e controlada.',
     },
     {
       icon: FaBookReader,
       title: 'Leitores',
       content:
-        'Disponibiliza-s um rápido e eficaz levantamento de informações, contando com o acesso a lista completa de leitores (ativos e inativos) e com a visualização do leitor ou leitora do mês.',
+        'A eficácia do sistema também abrange a sessão de leitores, ele possibilita a listagem de todos os leitores cadastrados no sistema, além do raking dos que mais leram em um determinado mês ou ano.',
     },
     {
       icon: TbArrowsLeftRight,
       title: 'Requisições',
       content:
-        'Ao um escolher um livro e um autor, uma requisição é criada e os prazos de entrega são automaticamente calculados pelo sistema, além de alertar as pendências e listar todas as requisições do sistema.',
+        'Ao um escolher um livro e um autor, uma requisição é criada e os prazos de entrega são automaticamente calculados e exibidos pelo sistema, além de alertar as pendências e listar todas as requisições do sistema.',
     },
     {
       icon: ImBooks,
